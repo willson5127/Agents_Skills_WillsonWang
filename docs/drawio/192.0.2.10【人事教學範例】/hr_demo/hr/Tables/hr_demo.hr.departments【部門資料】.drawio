@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="Electron">
+  <diagram name="第 1 頁" id="hr-departments">
+    <mxGraphModel grid="1" gridSize="10" tooltips="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="entity" parent="1" vertex="1" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:rgb(228,228,228);padding:2px 3px;font-size:10.5px;line-height:13px;white-space:nowrap&quot;&gt;&lt;b&gt;hr_demo.hr.departments【部門資料】&lt;/b&gt;&lt;/div&gt;&lt;table style=&quot;width:100%;table-layout:fixed;font-family:Arial;font-size:11px;line-height:14px&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;&lt;colgroup&gt;&lt;col style=&quot;width:31px&quot;/&gt;&lt;col style=&quot;width:104px&quot;/&gt;&lt;col/&gt;&lt;/colgroup&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top;white-space:nowrap&quot;&gt;&lt;b&gt;PK&lt;/b&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:top;white-space:nowrap;padding-right:8px&quot; title=&quot;varchar(10) · NULL NO | 虛構資料字典：examples/tablecard-demo.json | 中文名稱：既有註解&quot;&gt;department_code&lt;/td&gt;&lt;td style=&quot;vertical-align:top;white-space:normal;overflow-wrap:anywhere;word-break:break-all&quot; title=&quot;varchar(10) · NULL NO | 虛構資料字典：examples/tablecard-demo.json | 中文名稱：既有註解&quot;&gt;&lt;b&gt;部門代碼&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top;white-space:nowrap&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:top;white-space:nowrap;padding-right:8px&quot; title=&quot;nvarchar(80) · NULL NO | 虛構資料字典：examples/tablecard-demo.json | 中文名稱：既有註解&quot;&gt;department_name&lt;/td&gt;&lt;td style=&quot;vertical-align:top;white-space:normal;overflow-wrap:anywhere;word-break:break-all&quot; title=&quot;nvarchar(80) · NULL NO | 虛構資料字典：examples/tablecard-demo.json | 中文名稱：既有註解&quot;&gt;&lt;b&gt;部門名稱&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top;white-space:nowrap&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:top;white-space:nowrap;padding-right:8px&quot; title=&quot;bit · NULL NO | 虛構資料字典：examples/tablecard-demo.json | 中文名稱：既有註解&quot;&gt;is_active&lt;/td&gt;&lt;td style=&quot;vertical-align:top;white-space:normal;overflow-wrap:anywhere;word-break:break-all&quot; title=&quot;bit · NULL NO | 虛構資料字典：examples/tablecard-demo.json | 中文名稱：既有註解&quot;&gt;&lt;b&gt;是否啟用&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=11;spacing=0;">
+          <mxGeometry x="0" y="0" width="215" height="69" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

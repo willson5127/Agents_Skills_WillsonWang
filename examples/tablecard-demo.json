@@ -1,0 +1,39 @@
+{
+  "notice": "全部為虛構教學資料；192.0.2.10 僅為範例標籤，不建立連線。",
+  "ip": "192.0.2.10",
+  "alias": "人事教學範例",
+  "database": "hr_demo",
+  "objects": [
+    {"schema": "hr", "kind": "Tables", "name": "employees", "label": "員工資料", "columns": [
+      {"name": "employee_id", "label": "員工編號", "key": "PK", "type": "int", "nullable": false},
+      {"name": "employee_no", "label": "工號", "key": "UK1", "type": "varchar(20)", "nullable": false},
+      {"name": "employee_name", "label": "員工姓名", "type": "nvarchar(60)", "nullable": false},
+      {"name": "department_code", "label": "部門代碼", "type": "varchar(10)", "nullable": true},
+      {"name": "email", "label": "電子郵件", "type": "varchar(200)", "nullable": true},
+      {"name": "legacy_tag", "label": null, "type": "varchar(40)", "nullable": true}
+    ]},
+    {"schema": "hr", "kind": "Tables", "name": "departments", "label": "部門資料", "columns": [
+      {"name": "department_code", "label": "部門代碼", "key": "PK", "type": "varchar(10)", "nullable": false},
+      {"name": "department_name", "label": "部門名稱", "type": "nvarchar(80)", "nullable": false},
+      {"name": "is_active", "label": "是否啟用", "type": "bit", "nullable": false}
+    ]},
+    {"schema": "attendance", "kind": "Tables", "name": "daily_attendance", "label": "每日出勤", "columns": [
+      {"name": "employee_id", "label": "員工編號", "key": "PK", "type": "int", "nullable": false},
+      {"name": "work_date", "label": "出勤日期", "key": "PK", "type": "date", "nullable": false},
+      {"name": "clock_in", "label": "上班打卡時間", "type": "datetime2", "nullable": true},
+      {"name": "clock_out", "label": "下班打卡時間", "type": "datetime2", "nullable": true},
+      {"name": "remark", "label": "備註", "type": "nvarchar(200)", "nullable": true}
+    ]},
+    {"schema": "hr", "kind": "Views", "name": "v_employee_directory", "label": "員工通訊名錄", "columns": [
+      {"name": "employee_no", "label": "工號", "type": "varchar(20)", "nullable": false},
+      {"name": "employee_name", "label": "員工姓名", "type": "nvarchar(60)", "nullable": false},
+      {"name": "department_name", "label": "部門名稱", "type": "nvarchar(80)", "nullable": true},
+      {"name": "email", "label": "電子郵件", "type": "varchar(200)", "nullable": true}
+    ]},
+    {"schema": "attendance", "kind": "Views", "name": "v_daily_summary", "label": "每日出勤摘要", "columns": [
+      {"name": "work_date", "label": "出勤日期", "type": "date", "nullable": false},
+      {"name": "present_count", "label": "出勤人數", "type": "int", "nullable": false},
+      {"name": "missing_clock_out_count", "label": "未簽退人數", "type": "int", "nullable": false}
+    ]}
+  ]
+}
