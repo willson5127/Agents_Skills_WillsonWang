@@ -16,7 +16,18 @@
 
 更多教科書與工具書的編寫提示見 [examples/research-textbook-request.md](examples/research-textbook-request.md)。
 
+實際試用案例：[從零寫出可靠程式：C 語言教科書](Document/Books/C/README.md)。這是使用者以 `research-textbook` 試用產出的原創書稿，包含 14 章、合訂版、學習地圖、術語與速查、來源紀錄及獨立 C 範例。書內保留原產出者的查閱與審閱範圍說明；本儲存庫納入案例不代表重新驗證所有來源或程式正確性，範例尚未在本環境編譯執行。
+
 技能的核心品質要求：不虛構書名、作者、連結或引用；沒有讀到內容就不宣稱教材品質已驗證；清楚列出涵蓋內容與缺口，不宣稱無所不包；每章提供由淺入深的解釋、範例、練習、解答與學習成果檢核方式，並附實際開啟閱讀的網路來源連結。僅有目錄、來源清單或格式檢查不足以交付。
+## 文件產出的共同位置
+
+技能產生的文件統一放在使用者工作區根目錄的 `Document/`：
+
+- `drawio-tablecard`：`Document/drawio/`，內部維持連線位置、資料庫、Schema、Tables／Views 分層。
+- `research-textbook`：預設為 `Document/Books/<主題短名>/`，亦可由使用者指定書籍位置。
+
+技能本體仍保留於 `.agents/skills/`，文件產出位置與技能載入位置各有用途。資料表卡片的 [範例說明](Document/drawio/192.0.2.10【人事教學範例】/tablecard-demo.md) 與 [HTML 預覽](Document/drawio/192.0.2.10【人事教學範例】/tablecard-preview.html) 必須放在對應的 `Document/drawio/IP【伺服器名】/`，與資料庫子目錄並列；執行 `python examples/build_tablecard_demo.py` 會在此重建示範。既有使用者文件不會自動搬移或覆蓋。
+
 ## 檔案位置
 
 ```text

@@ -15,7 +15,8 @@ measurements = json.loads(subprocess.check_output(
      + "$PSScriptRoot = '" + str(ROOT / "examples").replace("'", "''") + "'; "
      + (ROOT / "examples" / "measure_tablecard.ps1").read_text(encoding="utf-8")],
     encoding="utf-8-sig"))
-base = ROOT / "docs" / "drawio" / f'{data["ip"]}【{data["alias"]}】' / data["database"]
+server_dir = ROOT / "Document" / "drawio" / f'{data["ip"]}【{data["alias"]}】'
+base = server_dir / data["database"]
 previews = []
 links = []
 
@@ -77,15 +78,15 @@ for obj in data["objects"]:
         assert 'white-space:nowrap' in row[1].get('style')
     assert 'white-space:nowrap' in label_tree.find('div').get('style')
     previews.append(f'<article><p>{esc(obj["kind"])} · {width} × {height} px</p><div style="width:{width}px;height:{height}px;border:1px solid #aaa;font-size:11px">{card}</div></article>')
-    links.append(f'- [{title}]({path.relative_to(ROOT / "docs").as_posix()})')
+    links.append(f'- [{title}]({path.relative_to(server_dir).as_posix()})')
 
-preview = ROOT / "docs" / "tablecard-preview.html"
+preview = server_dir / "tablecard-preview.html"
 preview.write_text('<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><title>資料表卡片範例</title>'
     '<style>body{font-family:Arial,"Microsoft JhengHei",sans-serif;background:#f5f6f8;padding:24px}main{display:flex;flex-wrap:wrap;align-items:flex-start;gap:24px}article{background:white;padding:12px}article p{font-size:12px;color:#555}</style>'
     '<h1>資料表卡片範例</h1><p>虛構教學資料。下列為相同 HTML 標籤的預覽，drawio 實際呈現仍以編輯器為準。</p>'
     '<p>PK＝主鍵（同表多欄 PK 為複合主鍵）；UK1＝唯一鍵群組 1。View 未宣告表鍵，不從欄位名稱推測。</p><main>'
     + ''.join(previews) + '</main></html>', encoding="utf-8")
-(ROOT / "docs" / "tablecard-demo.md").write_text(
+(server_dir / "tablecard-demo.md").write_text(
     '# drawio 表格結構卡範例\n\n'
     '本範例完全虛構，不連接資料庫。來源為 `examples/tablecard-demo.json`。\n\n'
     '共 3 張 Table、2 張 View，依資料庫與 Schema 分層；每份 drawio 只有一個頂點，座標為 (0, 0)，不含關聯線。\n\n'

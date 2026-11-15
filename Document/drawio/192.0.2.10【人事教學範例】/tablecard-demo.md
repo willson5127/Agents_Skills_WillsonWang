@@ -16,11 +16,11 @@ PK 表示主鍵；每日出勤的兩個 PK 欄位共同構成複合主鍵。UK1 
 
 在 diagrams.net／draw.io 使用「開啟現有圖表」選擇下列檔案；每張卡片可作為單一物件移動，編輯其 HTML 標籤。
 
-- [hr_demo.hr.employees【員工資料】](drawio/192.0.2.10【人事教學範例】/hr_demo/hr/Tables/hr_demo.hr.employees【員工資料】.drawio)
-- [hr_demo.hr.departments【部門資料】](drawio/192.0.2.10【人事教學範例】/hr_demo/hr/Tables/hr_demo.hr.departments【部門資料】.drawio)
-- [hr_demo.attendance.daily_attendance【每日出勤】](drawio/192.0.2.10【人事教學範例】/hr_demo/attendance/Tables/hr_demo.attendance.daily_attendance【每日出勤】.drawio)
-- [hr_demo.hr.v_employee_directory【員工通訊名錄】](drawio/192.0.2.10【人事教學範例】/hr_demo/hr/Views/hr_demo.hr.v_employee_directory【員工通訊名錄】.drawio)
-- [hr_demo.attendance.v_daily_summary【每日出勤摘要】](drawio/192.0.2.10【人事教學範例】/hr_demo/attendance/Views/hr_demo.attendance.v_daily_summary【每日出勤摘要】.drawio)
+- [hr_demo.hr.employees【員工資料】](hr_demo/hr/Tables/hr_demo.hr.employees【員工資料】.drawio)
+- [hr_demo.hr.departments【部門資料】](hr_demo/hr/Tables/hr_demo.hr.departments【部門資料】.drawio)
+- [hr_demo.attendance.daily_attendance【每日出勤】](hr_demo/attendance/Tables/hr_demo.attendance.daily_attendance【每日出勤】.drawio)
+- [hr_demo.hr.v_employee_directory【員工通訊名錄】](hr_demo/hr/Views/hr_demo.hr.v_employee_directory【員工通訊名錄】.drawio)
+- [hr_demo.attendance.v_daily_summary【每日出勤摘要】](hr_demo/attendance/Views/hr_demo.attendance.v_daily_summary【每日出勤摘要】.drawio)
 
 可用瀏覽器開啟 [HTML 預覽](tablecard-preview.html) 一次檢視所有卡片；此預覽不等同 drawio 編輯器渲染驗證。
 
