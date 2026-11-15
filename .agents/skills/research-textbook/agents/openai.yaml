@@ -1,0 +1,4 @@
+interface:
+  display_name: "搜尋知識並編寫教材"
+  short_description: "以 Google 查證資料，編寫從零入門到專家議題的分章教材並附來源"
+  default_prompt: "請使用 $research-textbook，依我的學習主題搜尋並查證來源，在指定資料夾編寫從零開始到專家議題的教科書，附範例、練習解答與參考超連結。"
