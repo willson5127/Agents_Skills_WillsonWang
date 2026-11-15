@@ -24,7 +24,7 @@
 - `drawio-tablecard`：`Document/drawio/`，內部維持連線位置、資料庫、Schema、Tables／Views 分層。
 - `research-textbook`：預設為 `Document/Books/<主題短名>/`，亦可由使用者指定書籍位置。
 
-技能本體仍保留於 `.agents/skills/`，文件產出位置與技能載入位置各有用途。資料表卡片的 [範例說明](Document/tablecard-demo.md) 與 [HTML 預覽](Document/tablecard-preview.html) 也統一放在 `Document/`；執行 `python examples/build_tablecard_demo.py` 會在此重建示範，不再輸出到 `docs/`。既有使用者文件不會自動搬移或覆蓋。
+技能本體仍保留於 `.agents/skills/`，文件產出位置與技能載入位置各有用途。資料表卡片的 [範例說明](Document/drawio/192.0.2.10【人事教學範例】/tablecard-demo.md) 與 [HTML 預覽](Document/drawio/192.0.2.10【人事教學範例】/tablecard-preview.html) 必須放在對應的 `Document/drawio/IP【伺服器名】/`，與資料庫子目錄並列；執行 `python examples/build_tablecard_demo.py` 會在此重建示範，不再輸出到 `docs/`。既有使用者文件不會自動搬移或覆蓋。
 
 ## 檔案位置
 

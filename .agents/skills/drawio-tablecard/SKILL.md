@@ -17,11 +17,13 @@ description: 解析資料庫或相關文件，將各表格撰寫並歸類成各�
 
 1. 從指示文件或工作環境文件找出指定資料庫。
 2. 請在./Document/，找尋或建立資料夾drawio。
-3. 請在./Document/drawio/，找尋或建立資料夾名為，IP連線位置【資料庫俗稱】。
-4. 請在./Document/drawio/IP連線位置【資料庫俗稱】/，建立多個資料夾，名為資料庫名稱。若資料庫種類存在模式分層，請在各./Document/drawio/IP連線位置【資料庫俗稱】/資料庫名稱/，之中建立多個資料庫Schema名稱的資料夾。
-5. 請在各./Document/drawio/IP連線位置【資料庫俗稱】/資料庫名稱/，找尋或建立兩個資料夾名為，Tables，和Views。若資料庫種類存在模式分層，請進一步在資料庫Schema層建立。
-6. 請在各./Document/drawio/IP連線位置【資料庫俗稱】/資料庫名稱/，建立多個drawio，名為資料表名稱，或View表名稱，名稱格式`db名稱.schema名稱.table/view名稱【中文名稱】`。若資料庫種類存在模式分層，請進一步在資料庫Schema層建立。
+3. 請在./Document/drawio/，找尋或建立資料夾名為，IP連線位置【伺服器名】。
+4. 請在./Document/drawio/IP連線位置【伺服器名】/，建立多個資料夾，名為資料庫名稱。若資料庫種類存在模式分層，請在各./Document/drawio/IP連線位置【伺服器名】/資料庫名稱/，之中建立多個資料庫Schema名稱的資料夾。
+5. 請在各./Document/drawio/IP連線位置【伺服器名】/資料庫名稱/，找尋或建立兩個資料夾名為，Tables，和Views。若資料庫種類存在模式分層，請進一步在資料庫Schema層建立。
+6. 請在各./Document/drawio/IP連線位置【伺服器名】/資料庫名稱/，建立多個drawio，名為資料表名稱，或View表名稱，名稱格式`db名稱.schema名稱.table/view名稱【中文名稱】`。若資料庫種類存在模式分層，請進一步在資料庫Schema層建立。
 7. 解析出各Tables&Views的結構，並且將其以輸出格式建立drawio表格結構卡。若有舊版的文件，請直接覆蓋。
+
+8. 每個伺服器的 `tablecard-demo.md` 與 `tablecard-preview.html` 必須放在 `Document/drawio/IP【伺服器名】/` 內，與資料庫子目錄並列，不得放在 `Document/` 或 `Document/drawio/` 的頂層。說明檔連到該伺服器下的卡片及 HTML 預覽，一律使用相對於說明檔的路徑；不同伺服器各自保留一組說明與預覽，避免互相覆蓋。
 
 ## 輸出
 
