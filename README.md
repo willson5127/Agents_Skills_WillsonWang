@@ -1,15 +1,36 @@
 # Codex Skill 入門模板
 
-這個工作區包含一個可修改的實際技能：`requirement-brief`，用來把零散筆記整理成開發需求規格。
+這個工作區保存可修改的 Codex 技能，包含整理開發需求的 `requirement-brief`、產生資料表卡片的 `drawio-tablecard`，以及搜尋並編寫教材的 `research-textbook`。
 
+## 搜尋並編寫系統教材
+
+新增的 [research-textbook](.agents/skills/research-textbook/SKILL.md) 技能可接收學習主題，使用 Google 查找並核對官方文件、知識文獻與論壇，在指定資料夾建立從零入門、逐章深入到專家議題的教科書或工具書。每章包含解說、示範、練習與解答，以及可追溯的來源超連結；另提供學習地圖、術語表，以及涵蓋範圍與限制。學習成果檢核是書中的練習與判準，並非技能測試報告。
+
+```text
+請使用 $research-textbook。我想從零學 PostgreSQL，請用 Google 搜尋資料，
+在 Document/Books/postgresql/ 建立繁體中文教科書，從基礎講到進階原理與專家實務，
+每章附範例、練習解答及原始來源超連結。
+```
+
+未指定位置時依工作區規範預設放在 `Document/Books/<主題短名>/`，不修改個人技能設定。此技能需要可存取 Google 的瀏覽或搜尋能力；若無法使用 Google，會說明限制並詢問是否接受替代引擎，不冒稱已完成搜尋。教材預設為 Markdown；書稿涵蓋專家議題，不代表只讀完即可取得專家能力。
+
+更多教科書與工具書的編寫提示見 [examples/research-textbook-request.md](examples/research-textbook-request.md)。
+
+技能的核心品質要求：不虛構書名、作者、連結或引用；沒有讀到內容就不宣稱教材品質已驗證；清楚列出涵蓋內容與缺口，不宣稱無所不包；每章提供由淺入深的解釋、範例、練習、解答與學習成果檢核方式，並附實際開啟閱讀的網路來源連結。僅有目錄、來源清單或格式檢查不足以交付。
 ## 檔案位置
 
 ```text
-Delta_Codex/
-├── .agents/skills/requirement-brief/
-│   └── SKILL.md           技能本體，複製這個資料夾即可改作其他技能
+Agents_Skills_WillsonWang/
+├── .agents/skills/
+│   ├── requirement-brief/SKILL.md
+│   ├── drawio-tablecard/SKILL.md
+│   └── research-textbook/
+│       ├── SKILL.md
+│       ├── agents/openai.yaml
+│       └── references/book-structure.md
 ├── examples/
-│   └── requirement-notes.md   練習輸入與測試方式
+│   ├── requirement-notes.md
+│   └── research-textbook-request.md   教科書與工具書的編寫提示
 └── README.md              本教學，不是技能指令
 ```
 
